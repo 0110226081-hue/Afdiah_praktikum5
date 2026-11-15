@@ -1,0 +1,134 @@
+
+/* RESET CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HALAMAN UTAMA */
+body {
+    width: 100%;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+/* BROWSER UTAMA */
+.browser {
+    width: 100%;
+    min-height: 100vh;
+    border: 2px solid #777;
+    background-color: white;
+    padding: 0 12px 20px;
+}
+
+/* HEADER BROWSER */
+.header {
+    width: 100%;
+    height: 65px;
+    background-color: #e5e5e5;
+    border-bottom: 2px solid #777;
+    margin: 0 -0px 12px;
+}
+
+/* JUDUL MOZILLA */
+.judul {
+    height: 25px;
+    text-align: center;
+    padding: 5px;
+    font-size: 12px;
+}
+
+/* ADDRESS BAR */
+.address-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 3px 8px;
+    height: 35px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.alamat {
+    flex: 1;
+    height: 26px;
+    background-color: white;
+    border: 1px solid #555;
+    color: #1675c1;
+    font-size: 13px;
+    font-weight: normal;
+    padding: 5px 8px;
+}
+
+/* KOTAK HIJAU BAGIAN ATAS */
+.hijau {
+    width: 100%;
+    height: 15vh;
+    background-color: #a9dc91;
+    border: 1px solid #555;
+    margin-bottom: 20px;
+}
+
+/* BAGIAN KONTEN */
+.content {
+    width: 100%;
+    display: flex;
+    gap: 25px;
+}
+
+/* KOLOM KIRI */
+.kiri {
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* KOTAK KUNING */
+.kuning {
+    width: 100%;
+    height: 18vh;
+    background-color: #f5eb45;
+    border: 1px solid #555;
+}
+
+/* KOLOM KANAN */
+.kanan {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* KOTAK ORANYE */
+.oranye {
+    width: 100%;
+    height: 18vh;
+    background-color: #ff6428;
+    border: 1px solid #555;
+}
+
+/* KOTAK BIRU */
+.biru {
+    width: 100%;
+    height: 18vh;
+    background-color: #45c9e9;
+    border: 1px solid #555;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    .content {
+        gap: 12px;
+    }
+
+    .kiri {
+        width: 25%;
+    }
+
+    .kanan {
+        flex: 1;
+    }
+}

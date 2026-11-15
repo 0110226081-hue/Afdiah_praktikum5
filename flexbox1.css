@@ -1,0 +1,108 @@
+
+/* RESET CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    width: 100%;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+/* NAVBAR */
+.navbar {
+    width: 100%;
+    min-height: 85px;
+
+    background-color: aquamarine;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px 40px;
+}
+
+/* LOGO */
+.logo img {
+    width: 75px;
+    height: 65px;
+    object-fit: contain;
+}
+
+/* MENU NAVIGASI */
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+
+/* LINK MENU */
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+/* EFEK MENU */
+.menu a:hover {
+    color: blue;
+}
+
+/* KONTEN UTAMA */
+.content {
+    width: 100%;
+    min-height: calc(100vh - 85px);
+
+    padding: 35px 40px;
+}
+
+/* JUDUL */
+.content h2 {
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+/* DAFTAR PROGRAM STUDI */
+.content ul {
+    padding-left: 40px;
+    font-size: 22px;
+    line-height: 1.8;
+}
+
+/* RESPONSIVE UNTUK HP */
+@media (max-width: 600px) {
+
+    .navbar {
+        padding: 10px 15px;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .menu {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .menu a {
+        font-size: 15px;
+    }
+
+    .content {
+        padding: 25px 15px;
+    }
+
+    .content h2 {
+        font-size: 22px;
+    }
+
+    .content ul {
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,145 @@
+
+/* RESET CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HALAMAN UTAMA */
+body {
+    width: 100%;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+/* BROWSER UTAMA */
+.browser {
+    width: 100%;
+    min-height: 100vh;
+    border: 2px solid #777;
+    padding: 0 15px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* HEADER */
+.header {
+    width: 100%;
+    height: 65px;
+    flex-shrink: 0;
+    background-color: #e5e5e5;
+    border-bottom: 2px solid #777;
+}
+
+/* JUDUL MOZILLA */
+.judul {
+    height: 25px;
+    text-align: center;
+    font-size: 12px;
+    padding: 5px;
+}
+
+/* ADDRESS BAR */
+.address-bar {
+    height: 35px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 3px 8px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.alamat {
+    flex: 1;
+    height: 26px;
+    background-color: white;
+    border: 1px solid #555;
+    color: #1675c1;
+    font-size: 13px;
+    font-weight: normal;
+    padding: 5px 8px;
+}
+
+/* BARIS ATAS */
+.baris-atas {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    gap: 15px;
+}
+
+/* KOTAK KUNING */
+.kuning {
+    width: 20%;
+    background-color: #f5eb45;
+    border: 1px solid #555;
+}
+
+/* KOTAK ORANYE */
+.oranye {
+    flex: 1;
+    background-color: #ff6428;
+    border: 1px solid #555;
+}
+
+/* BAGIAN TENGAH */
+.bagian-tengah {
+    width: 100%;
+    flex: 1;
+    min-height: 0;
+    display: flex;
+    gap: 15px;
+}
+
+/* KOTAK HIJAU */
+.hijau {
+    width: 20%;
+    background-color: #a9dc91;
+    border: 1px solid #555;
+}
+
+/* KOTAK ABU-ABU */
+.abu-abu {
+    flex: 1;
+    background-color: #d0d5da;
+    border: 1px solid #555;
+}
+
+/* KOTAK BIRU MUDA */
+.biru-muda {
+    width: 20%;
+    background-color: #45c9e9;
+    border: 1px solid #555;
+}
+
+/* KOTAK BIRU TUA BAGIAN BAWAH */
+.biru-tua {
+    width: 100%;
+    height: 8vh;
+    flex-shrink: 0;
+    background-color: #1762ed;
+    border: 1px solid #555;
+}
+
+/* RESPONSIVE UNTUK HP */
+@media (max-width: 600px) {
+    .browser {
+        padding: 0 8px 8px;
+        gap: 8px;
+    }
+
+    .baris-atas,
+    .bagian-tengah {
+        gap: 8px;
+    }
+
+    .kuning,
+    .hijau,
+    .biru-muda {
+        width: 20%;
+    }
+}

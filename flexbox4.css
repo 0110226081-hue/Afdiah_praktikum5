@@ -1,0 +1,78 @@
+
+/* RESET CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* CONTAINER UTAMA */
+.container {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    gap: 12px;
+
+    padding: 30px;
+}
+
+/* BARIS PERTAMA */
+.baris-atas {
+    width: 100%;
+    height: 12vh;
+
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+/* BARIS KEDUA */
+.baris-bawah {
+    width: 100%;
+    height: 9vh;
+
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+/* SEMUA KOTAK */
+.kotak {
+    flex: 1;
+
+    background-color: #dddddd;
+
+    border: 4px solid #222222;
+    border-radius: 8px;
+}
+
+/* RESPONSIVE UNTUK HP */
+@media (max-width: 600px) {
+
+    .container {
+        padding: 12px;
+        gap: 10px;
+    }
+
+    .baris-atas,
+    .baris-bawah {
+        gap: 5px;
+    }
+
+    .kotak {
+        border-width: 2px;
+        border-radius: 5px;
+    }
+}
